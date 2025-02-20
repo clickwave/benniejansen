@@ -91,7 +91,7 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="text-white text-6xl md:text-9xl font-light tracking-widest"
+            className="text-white text-4xl sm:text-6xl md:text-9xl font-light tracking-widest"
           >
             ARCHITECTUUR
           </motion.h2>
