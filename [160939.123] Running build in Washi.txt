@@ -1,0 +1,65 @@
+[16:09:39.123] Running build in Washington, D.C., USA (East) – iad1
+[16:09:39.240] Cloning github.com/clickwave/benniejansen (Branch: main, Commit: feb1f46)
+[16:09:39.344] Skipping build cache, deployment was triggered without cache.
+[16:09:40.747] Cloning completed: 1.510s
+[16:09:41.057] Running "vercel build"
+[16:09:41.746] Vercel CLI 41.1.4
+[16:09:42.387] Installing dependencies...
+[16:09:45.159] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[16:09:45.527] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[16:09:46.550] npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+[16:09:46.553] npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+[16:09:46.639] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[16:09:48.267] npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+[16:09:53.341] 
+[16:09:53.342] added 405 packages in 11s
+[16:09:53.342] 
+[16:09:53.342] 151 packages are looking for funding
+[16:09:53.343]   run `npm fund` for details
+[16:09:53.401] Running "npm run build"
+[16:09:53.516] 
+[16:09:53.517] > my-nextjs-app@0.1.0 build
+[16:09:53.517] > next build
+[16:09:53.517] 
+[16:09:54.060] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[16:09:54.060] This information is used to shape Next.js' roadmap and prioritize features.
+[16:09:54.060] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[16:09:54.061] https://nextjs.org/telemetry
+[16:09:54.061] 
+[16:09:54.115]   ▲ Next.js 14.2.23
+[16:09:54.117] 
+[16:09:54.182]    Creating an optimized production build ...
+[16:10:14.194]  ✓ Compiled successfully
+[16:10:14.195]    Linting and checking validity of types ...
+[16:10:19.966]    Collecting page data ...
+[16:10:21.273]    Generating static pages (0/11) ...
+[16:10:21.577]    Generating static pages (2/11) 
+[16:10:21.767]    Generating static pages (5/11) 
+[16:10:22.047]    Generating static pages (8/11) 
+[16:10:22.369]  ✓ Generating static pages (11/11)
+[16:10:22.625]    Finalizing page optimization ...
+[16:10:22.626]    Collecting build traces ...
+[16:10:27.121] 
+[16:10:27.134] Route (app)                              Size     First Load JS
+[16:10:27.135] ┌ ○ /                                    1.29 kB         130 kB
+[16:10:27.135] ├ ○ /_not-found                          873 B            88 kB
+[16:10:27.135] ├ ○ /contact                             1.88 kB         125 kB
+[16:10:27.136] ├ ○ /over-ons                            1.76 kB         137 kB
+[16:10:27.136] ├ ○ /projecten                           2.35 kB         138 kB
+[16:10:27.136] ├ ○ /projecten/moderne-villa             31.4 kB         167 kB
+[16:10:27.136] ├ ○ /projects                            2.35 kB         138 kB
+[16:10:27.136] └ ○ /voorbeeld-slider                    3.6 kB          127 kB
+[16:10:27.136] + First Load JS shared by all            87.1 kB
+[16:10:27.136]   ├ chunks/117-58494198d739a7b9.js       31.6 kB
+[16:10:27.136]   ├ chunks/fd9d1056-af324d327b243cf1.js  53.6 kB
+[16:10:27.137]   └ other shared chunks (total)          1.9 kB
+[16:10:27.137] 
+[16:10:27.137] 
+[16:10:27.137] ○  (Static)  prerendered as static content
+[16:10:27.137] 
+[16:10:27.210] Build Completed in /vercel/output [45s]
+[16:10:27.346] Deploying outputs...
+[16:10:30.000] 
+[16:10:30.326] Deployment completed
+[16:10:41.789] Uploading build cache [101.08 MB]...
+[16:10:42.959] Build cache uploaded: 1.170s

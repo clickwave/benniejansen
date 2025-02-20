@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ReactNode } from 'react'
 
@@ -65,9 +66,11 @@ export default function Home() {
               We streven naar duurzaamheid en verwerven functionaliteit met esthetiek. 
               Samen met jou creëren we architectuur die het heden omarmt met een tijdloze visie.
             </p>
-            <Button>
-              PROJECTEN
-            </Button>
+            <Link href="/projecten">
+              <Button>
+                PROJECTEN
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
