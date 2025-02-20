@@ -42,7 +42,7 @@ export default function OverOns() {
           >
             <h2 className="heading-md mb-12 text-center">Onze missie</h2>
             <p className="text-lg leading-relaxed mb-8">
-              Wij vertalen jouw dromen naar unieke ontwerpen die zowel tijdloos als vernieuwend zijn. We streven naar duurzaamheid en verwerven functionaliteit met esthetiek. Samen met jou creëren we architectuur die het heden omarmt met een tijdloze visie, unieke expressie en innovatieve concepten.
+              Wij vertalen jouw dromen naar unieke ontwerpen die zowel tijdloos als vernieuwend zijn. We streven naar duurzaamheid en verwerven functionaliteit met esthetiek. Samen met jou cre&euml;ren we architectuur die het heden omarmt met een tijdloze visie, unieke expressie en innovatieve concepten.
             </p>
             <p className="text-lg leading-relaxed">
               Het nieuwe modernisme gaat over functionele eenvoud, het mocanisme. Wij geloven dat architectuur moet bijdragen aan een betere wereld, door duurzame en energiezuinige oplossingen te integreren in elk ontwerp.
