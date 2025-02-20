@@ -62,11 +62,11 @@ export default function Header() {
               <Link href="/">
                 <Image
                   src={isScrolled ? "/images/logo-dark.svg" : "/images/logo.svg"}
-                  alt="Studio Bennie Jansen"
-                  width={180}
-                  height={50}
+                  alt="Bennie Jansen Architecten"
+                  width={240}
+                  height={60}
                   priority
-                  className="h-12 w-auto transition-all duration-300"
+                  className="h-16 w-auto transition-all duration-300"
                 />
               </Link>
             </motion.div>
