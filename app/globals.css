@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 font-sans;
+  }
+
+  .heading-xl {
+    @apply text-5xl md:text-7xl font-light;
+  }
+
+  .heading-lg {
+    @apply text-4xl md:text-5xl font-light;
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl font-light;
+  }
+
+  .heading-sm {
+    @apply text-xl md:text-2xl font-light;
+  }
+
+  .section-spacing {
+    @apply py-16 md:py-24;
+  }
+}
+
+@layer components {
+  .btn-outline {
+    @apply relative inline-block px-8 py-4;
+  }
+
+  .btn-outline::before,
+  .btn-outline::after {
+    content: '';
+    @apply absolute border-current transition-all duration-300;
+  }
+
+  /* Bottom and right borders (always visible) */
+  .btn-outline::before {
+    @apply right-0 bottom-0 w-full border-b;
+  }
+
+  .btn-outline::after {
+    @apply right-0 bottom-0 h-full border-r;
+  }
+
+  /* Left and top borders with gap */
+  .btn-outline span {
+    @apply relative block;
+  }
+
+  .btn-outline span::before,
+  .btn-outline span::after {
+    content: '';
+    @apply absolute border-current transition-all duration-300;
+  }
+
+  /* Left border (starts with gap) */
+  .btn-outline span::before {
+    @apply left-0 bottom-0 h-[calc(100%-16px)] border-l;
+  }
+
+  /* Top border (starts with gap) */
+  .btn-outline span::after {
+    @apply top-0 right-0 w-[calc(100%-16px)] border-t;
+  }
+
+  /* Hover states */
+  .btn-outline:hover span::before {
+    @apply h-full;
+  }
+
+  .btn-outline:hover span::after {
+    @apply w-full;
+  }
+
+  .btn-outline.inverted {
+    @apply text-white;
+  }
+
+  .info-item {
+    @apply border-b border-gray-200 py-3;
+  }
+
+  .info-label {
+    @apply text-sm text-gray-500 mb-1;
+  }
+
+  .info-value {
+    @apply text-base;
+  }
+
+  .container {
+    @apply max-w-[1400px] mx-auto;
+  }
+}
+
+/* Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white opacity-50 transition-opacity duration-300 hover:opacity-100;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply opacity-100;
+}
+
+/* Project Grid Hover Effects */
+.project-grid-item {
+  @apply relative overflow-hidden;
+}
+
+.project-grid-item:hover .project-grid-overlay {
+  @apply opacity-100;
+}
+
+.project-grid-overlay {
+  @apply absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 flex items-end p-8;
+}
+
+.project-grid-content {
+  @apply text-white;
+}
+
+.project-grid-title {
+  @apply text-2xl font-light mb-2;
+}
+
+.project-grid-subtitle {
+  @apply text-lg font-light opacity-80;
+}
